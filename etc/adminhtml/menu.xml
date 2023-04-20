@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="ArslanFarrukh_ShareCart::title"
+             title="Share Cart"
+             module="ArslanFarrukh_ShareCart"
+             sortOrder="10"
+             parent="ArslanFarrukh_Core::arslan"
+             resource="ArslanFarrukh_ShareCart::title"/>
+
+        <add id="ArslanFarrukh_ShareCart::sharecart"
+             title="Share Cart"
+             module="ArslanFarrukh_ShareCart"
+             sortOrder="10"
+             parent="ArslanFarrukh_ShareCart::title"
+             resource="ArslanFarrukh_ShareCart::sharecart"
+             action="admin/system_config/edit/section/arslan/share_cart"/>
+    </menu>
+</config>
